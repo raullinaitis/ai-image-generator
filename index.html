@@ -318,8 +318,8 @@
             <h1>🎨 AI Image Generator</h1>
             <p>Direct ByteDance Seedream V4 API - Instant Results! (Deployment Fixed)</p>
             <div style="background: rgba(255,255,255,0.2); padding: 10px; border-radius: 8px; margin-top: 10px; font-size: 0.9rem;">
-                ✅ <strong>API Fixed:</strong> Corrected endpoint URL and using CORS proxy. 
-                Should work properly now!
+                ✅ <strong>CORS Proxy Updated:</strong> Now using corsproxy.io for better reliability. 
+                Testing with improved proxy service!
             </div>
         </div>
 
@@ -582,8 +582,8 @@
 
                 console.log('ByteDance API request:', requestData);
 
-                // Try alternative CORS proxy
-                const proxyUrl = 'https://api.allorigins.win/raw?url=';
+                // Use CORS proxy that works better
+                const proxyUrl = 'https://corsproxy.io/?';
                 const targetUrl = encodeURIComponent('https://ark.ap-southeast-1.bytepluses.com/api/v3/images/generations');
                 const response = await fetch(proxyUrl + targetUrl, {
                     method: 'POST',
